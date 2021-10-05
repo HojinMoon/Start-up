@@ -1,0 +1,45 @@
+.btn-big {
+    width : 10vh;
+    height : 10vh;
+    color: #fff;
+    background-color: #1f2d59;
+    padding : 10px;
+    border: none;
+}
+.btn-big-blue {
+    width : 10vh;
+    height : 10vh;
+    color: #fff;
+    background-color: #91D7CC;
+    padding : 10px;
+    border: none;
+}
+.btn-big-yellow {
+    width : 10vh;
+    height : 10vh;
+    color: #fff;
+    background-color: #FFE67D;
+    padding : 10px;
+    border: none;
+}
+.btn-big-red {
+    width : 10vh;
+    height : 10vh;
+    color: #fff;
+    background-color: #FF9085;
+    padding : 10px;
+    border: none;
+}
+.btn-big:hover {
+    width : 12vh;
+    color: #fff;
+    background-color: #6d7db1;
+    border: none;
+}
+
+.btn-big:focus{
+    width : 12vh;
+    color: #fff;
+    background-color: #6d7db1;
+    border: none;
+}
