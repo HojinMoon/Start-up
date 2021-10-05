@@ -15,7 +15,7 @@ function Preview() {
         <Carousel.Item >
             <img src = {Preview1} className="d-block w-100" alt="First slide" />
             <Carousel.Caption>
-                <Link to="/Main">
+                <Link to="/select_card">
                     <Button className = "btn-light" style = {{marginBottom : "35vh", marginRight: "105vh"}}>
                         GO TO MORE
                     </Button>
@@ -26,7 +26,7 @@ function Preview() {
             <img
             className="d-block w-100" src = {Preview2} alt="Second slide"/>
             <Carousel.Caption>
-                <Link to="/Main">
+                <Link to="/select_card">
                     <Button className = "btn-secondary" style = {{marginBottom : "38vh", marginRight: "105vh"}}>
                         GO TO MORE
                     </Button>
