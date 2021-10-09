@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Markup from "../screens/markup-icon.png";
-import Arrow1 from "../screens/src_img/step1.png";
+import Arrow2 from "../screens/src_img/step2.png";
 
-function Form1(props) {
+function Form2(props) {
   return (
     <>
       <Navigation />
@@ -30,9 +30,9 @@ function Form1(props) {
           <b>회원가입</b>
         </div>
         <div className="row">
-          <img alt="" src={Arrow1} height="50vh" width="250vw"></img>
+          <img alt="" src={Arrow2} height="50vh" width="250vw"></img>
         </div>
-        <Link to="./form_step2">
+        <Link to="./form_step3">
           <Button
             className="my-5"
             style={{
@@ -53,4 +53,4 @@ function Form1(props) {
   );
 }
 
-export default Form1;
+export default Form2;

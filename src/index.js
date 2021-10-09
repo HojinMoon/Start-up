@@ -19,6 +19,9 @@ import Contact from "./screens/Contact";
 import Account from "./screens/Account";
 import Select from "./screens/Select_card";
 import Form1 from "./screens/Form1";
+import Form2 from "./screens/Form2";
+import Form3 from "./screens/Form3";
+import Form4 from "./screens/Form4";
 
 import "./index.css";
 
@@ -38,6 +41,9 @@ ReactDOM.render(
       <Route path="/account" component={Account} />
       <Route path="/select_card" component={Select} />
       <Route path="/form_step1" component={Form1} />
+      <Route path="/form_step2" component={Form2} />
+      <Route path="/form_step3" component={Form3} />
+      <Route path="/form_step4" component={Form4} />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

@@ -6,9 +6,9 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Markup from "../screens/markup-icon.png";
 import Card1_1 from "../screens/src_img/1_before.png";
-import Card1_2 from "../screens/src_img/1_after.png";
+// import Card1_2 from "../screens/src_img/1_after.png";
 import Card2_1 from "../screens/src_img/2_before.png";
-import Card2_2 from "../screens/src_img/2_after.png";
+// import Card2_2 from "../screens/src_img/2_after.png";
 
 function Account(props) {
   return (

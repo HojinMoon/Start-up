@@ -1,12 +1,12 @@
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Markup from "../screens/markup-icon.png";
-import Arrow1 from "../screens/src_img/step1.png";
+import Arrow4 from "../screens/src_img/step4.png";
 
-function Form1(props) {
+function Form4(props) {
   return (
     <>
       <Navigation />
@@ -30,22 +30,20 @@ function Form1(props) {
           <b>회원가입</b>
         </div>
         <div className="row">
-          <img alt="" src={Arrow1} height="50vh" width="250vw"></img>
+          <img alt="" src={Arrow4} height="50vh" width="250vw"></img>
         </div>
-        <Link to="./form_step2">
-          <Button
-            className="my-5"
-            style={{
-              width: "18vh",
-              height: "7vh",
-              backgroundColor: "#1F2D59",
-              fontSize: "1.2em",
-              marginLeft: "50vh",
-            }}
-          >
-            다음 단계
-          </Button>
-        </Link>
+        <Button
+          className="my-5"
+          style={{
+            width: "18vh",
+            height: "7vh",
+            backgroundColor: "#1F2D59",
+            fontSize: "1.2em",
+            marginLeft: "50vh",
+          }}
+        >
+          다음 단계
+        </Button>
       </div>
 
       <Footer />
@@ -53,4 +51,4 @@ function Form1(props) {
   );
 }
 
-export default Form1;
+export default Form4;
