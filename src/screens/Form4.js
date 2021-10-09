@@ -35,14 +35,14 @@ function Form4(props) {
         <Button
           className="my-5"
           style={{
-            width: "18vh",
+            width: "15vh",
             height: "7vh",
             backgroundColor: "#1F2D59",
             fontSize: "1.2em",
-            marginLeft: "50vh",
+            marginLeft: "52.5vh",
           }}
         >
-          다음 단계
+          완료
         </Button>
       </div>
 
