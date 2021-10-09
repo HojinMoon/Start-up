@@ -6,22 +6,24 @@ import mypage from "./mypage.png";
 
 const NavVarStyle = {
   fontWeight: "bold",
-  background: "#fff",
+  background: "white",
   color: "#fff1",
   display: "flex",
   width: "100%",
+  borderBottom: "1px solid black",
 };
 
 function Navigation() {
   return (
     <>
       <Navbar
-        className="py-2 px-3"
+        className="py-0 px-2"
         style={NavVarStyle}
         variant="red"
         text-align="center"
+        display="table"
       >
-        <Navbar.Brand href="home" style={{ marginLeft: "5.5rem" }}>
+        <Navbar.Brand href="home" style={{ marginLeft: "3.2vw" }}>
           &nbsp;
           <img
             alt=""
@@ -33,38 +35,26 @@ function Navigation() {
           />{" "}
           &nbsp;
         </Navbar.Brand>
-        <Nav style={{}}>
-          <div
-            class="box"
-            style={{ marginLeft: "10rem", marginRight: "10rem" }}
-          >
+        <Nav style={{ marginTop: "10" }}>
+          <div class="box" style={{ marginLeft: "30%", marginRight: "30%" }}>
             <Nav.Link className="mx-3" href="home">
               HOME
             </Nav.Link>
           </div>
           &nbsp;
-          <div
-            class="box"
-            style={{ marginLeft: "10rem", marginRight: "10rem" }}
-          >
+          <div class="box" style={{ marginLeft: "30%", marginRight: "30%" }}>
             <Nav.Link className="mx-3" eventKey={2} href="service">
               SERVICE
             </Nav.Link>
           </div>
           &nbsp;
-          <div
-            class="box"
-            style={{ marginLeft: "10rem", marginRight: "10rem" }}
-          >
+          <div class="box" style={{ marginLeft: "30%", marginRight: "30%" }}>
             <Nav.Link className="mx-3" eventKey={3} href="contact">
               CONTACT
             </Nav.Link>
           </div>
           &nbsp;
-          <div
-            class="box"
-            style={{ marginLeft: "10rem", marginRight: "10rem" }}
-          >
+          <div class="box" style={{ marginLeft: "8%", marginRight: "8%" }}>
             <Nav.Link className="mx-3" eventKey={4} href="MY">
               <img
                 alt=""

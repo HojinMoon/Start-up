@@ -21,7 +21,7 @@ function Account(props) {
             alt=""
             src={Markup}
             width="40vh"
-            height="vh"
+            height="40vh"
             // d-inline-block
             style={{ marginLeft: "57.5vh", marginBottom: "1vh" }}
           />{" "}
@@ -38,7 +38,7 @@ function Account(props) {
             style={{
               display: "flex",
               positon: "absolute",
-              transform: "translate( 21%, 0%)",
+              transform: "translate( 22%, 0%)",
             }}
           >
             <button style={{ backgroundColor: "white", border: "white" }}>
@@ -91,3 +91,5 @@ function Account(props) {
 }
 
 export default Account;
+// 해야될것
+// 마우스 토글 만들기
