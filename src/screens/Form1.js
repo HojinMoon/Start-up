@@ -32,6 +32,25 @@ function Form1(props) {
         <div className="row">
           <img alt="" src={Arrow1} height="50vh" width="250vw"></img>
         </div>
+        <div className="my-4">
+          <button type="checkbox"></button>이용약관
+        </div>
+        <hr></hr>
+        <div
+          style={{
+            marginLeft: "4vh",
+            width: "850px",
+            border: "3px solid grey",
+            padding: "10px",
+            backgroundColor: "white",
+          }}
+        >
+          1<p></p>2<p></p>3<p></p>4<p></p>5<p></p>6<p></p>7
+        </div>
+        <div className="my-3">
+          <button></button> 위치정보 이용약관에 동의하시겠습니까?(선택)
+        </div>
+        <hr></hr>
         <Link to="./form_step2">
           <Button
             className="my-5"
