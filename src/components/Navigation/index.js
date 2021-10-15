@@ -35,27 +35,71 @@ function Navigation() {
           />{" "}
           &nbsp;
         </Navbar.Brand>
-        <Nav style={{ marginTop: "10" }}>
-          <div class="box" style={{ marginLeft: "30%", marginRight: "30%" }}>
+        <Nav style={{ marginTop: "0%" }}>
+          <div
+            class="box"
+            style={{
+              marginLeft: "30%",
+              marginRight: "30%",
+              height: "10%",
+              position: "absolute",
+              top: "10%",
+              left: "-11%",
+            }}
+          >
             <Nav.Link className="mx-3" href="home">
               HOME
             </Nav.Link>
           </div>
           &nbsp;
-          <div class="box" style={{ marginLeft: "30%", marginRight: "30%" }}>
+          <div
+            class="box"
+            style={{
+              marginLeft: "30%",
+              marginRight: "30%",
+              height: "10%",
+              position: "absolute",
+              top: "10%",
+              left: "16%",
+            }}
+          >
             <Nav.Link className="mx-3" eventKey={2} href="service">
               SERVICE
             </Nav.Link>
           </div>
           &nbsp;
-          <div class="box" style={{ marginLeft: "30%", marginRight: "30%" }}>
+          <div
+            class="box"
+            style={{
+              marginLeft: "30%",
+              marginRight: "30%",
+              height: "10%",
+              position: "absolute",
+              top: "10%",
+              left: "40%",
+            }}
+          >
             <Nav.Link className="mx-3" eventKey={3} href="contact">
               CONTACT
             </Nav.Link>
           </div>
           &nbsp;
-          <div class="box" style={{ marginLeft: "8%", marginRight: "8%" }}>
-            <Nav.Link className="mx-3" eventKey={4} href="MY">
+          <div
+            class="box"
+            style={{
+              marginLeft: "8%",
+              marginRight: "8%",
+              height: "5%",
+              position: "absolute",
+              top: "10%",
+            }}
+          >
+            <Nav.Link
+              className="mx-3"
+              eventKey={4}
+              href="MY"
+              style={{ position: "relative", top: "10%", left: "1050%" }}
+            >
               <img
                 alt=""
                 src={mypage}
