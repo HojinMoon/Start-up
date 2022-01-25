@@ -1,17 +1,16 @@
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
 // import { Link, NavLink } from "react-router-dom";
-import teamLogo from "./team_logo.png";
-import mypage from "./mypage.png";
+import teamLogo from "./LOGO.png"
+import mypage from "./mypage.png"
 
 const NavVarStyle = {
   fontWeight: "bold",
   background: "white",
-  color: "#fff1",
   display: "flex",
   width: "100%",
   borderBottom: "1px solid black",
-};
+}
 
 function Navigation() {
   return (
@@ -21,14 +20,14 @@ function Navigation() {
         style={NavVarStyle}
         variant="red"
         text-align="center"
-        display="table"
+        display="box"
       >
-        <Navbar.Brand href="home" style={{ marginLeft: "3.2vw" }}>
+        <Navbar.Brand href="/" style={{ marginLeft: "3.2vw" }}>
           &nbsp;
           <img
             alt=""
             src={teamLogo}
-            width="40"
+            width="35"
             height="40"
             // d-inline-block
             className="align-top"
@@ -47,7 +46,7 @@ function Navigation() {
               left: "-11%",
             }}
           >
-            <Nav.Link className="mx-3" href="home">
+            <Nav.Link className="mx-3" href="home" style={{ color: "black" }}>
               HOME
             </Nav.Link>
           </div>
@@ -63,7 +62,12 @@ function Navigation() {
               left: "16%",
             }}
           >
-            <Nav.Link className="mx-3" eventKey={2} href="service">
+            <Nav.Link
+              className="mx-3"
+              eventKey={2}
+              href="service"
+              style={{ color: "black" }}
+            >
               SERVICE
             </Nav.Link>
           </div>
@@ -79,7 +83,12 @@ function Navigation() {
               left: "40%",
             }}
           >
-            <Nav.Link className="mx-3" eventKey={3} href="contact">
+            <Nav.Link
+              className="mx-3"
+              eventKey={3}
+              href="contact"
+              style={{ color: "black" }}
+            >
               CONTACT
             </Nav.Link>
           </div>
@@ -114,7 +123,7 @@ function Navigation() {
         </Nav>
       </Navbar>
     </>
-  );
+  )
 }
 
-export default Navigation;
+export default Navigation

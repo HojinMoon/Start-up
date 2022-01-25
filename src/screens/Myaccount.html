@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <title>1번 페이지</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+      }
+      .mainMenu {
+        display: block;
+        overflow: hidden;
+      }
+      .nav {
+        overflow: hidden;
+        border-bottom: 1px solid black;
+      }
+      .btn {
+        display: block;
+        padding: 15px 20px;
+        background-color: #e2f3f3;
+        color: black;
+        position: relative;
+      }
+      .sub {
+        background: #c2e6e5;
+        overflow: hidden;
+        transition: max-height 0.7s;
+        max-height: 0;
+      }
+      .sub a {
+        display: block;
+        padding: 15px 20px;
+        color: #222;
+        font-size: 14px;
+        position: relative;
+      }
+      .sub a:after {
+        content: "";
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .sub a:hover {
+        background: #fafafa;
+        transition: all 0.3s;
+        border-bottom: 1px solid #c8c8c8;
+      }
+      .sub a:last-child {
+        border: none;
+      }
+      .nav:target .sub {
+        max-height: 10em;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100vw;
+        height: 8vh;
+        font-size: 30px;
+        text-align: center;
+        border-bottom-color: #74c3b4;
+        border-style: solid;
+        padding-top: 0.5vw;
+      "
+    >
+      헤더
+    </div>
+    <div
+      style="
+        width: 80vw;
+        height: 2.5vw;
+        font-size: 20px;
+        margin-top: 3%;
+        margin-left: 10%;
+        border-color: aliceblue;
+        border-bottom-color: #6eb6b5;
+        border-style: solid;
+        word-spacing: 66vw;
+      "
+    >
+      홈>마이페이지 뒤로가기
+    </div>
+    <div>
+      <div
+        style="
+          width: 25vw;
+          height: 130vh;
+          font-size: 20px;
+          margin-top: 3%;
+          margin-left: 10%;
+          background-color: #e2f3f3;
+          border: 1px solid;
+          float: left;
+        "
+      >
+        <div
+          style="
+            width: 22vw;
+            height: 14vh;
+            margin-left: 1.5vw;
+            margin-top: 3vh;
+            background-color: white;
+            border: 1px solid white;
+          "
+        >
+          <div
+            style="
+              width: 8.5vw;
+              height: 2vw;
+              font-size: 15px;
+              margin-top: 15%;
+              margin-left: 55%;
+              display: block;
+              background-color: gray;
+              border-radius: 2em;
+              text-align: center;
+            "
+          >
+            의뢰인으로 전환
+          </div>
+        </div>
+        <div style="margin-top: 3%">
+          <ul class="mainMenu" style="width: 22vw; margin-left: 1.5vw">
+            <li class="nav" id="sell">
+              <a href="#sell" class="btn">판매내역</a>
+              <div class="sub">
+                <a href="">전체 주문상태 조회</a>
+                <a href="">미결제 주문</a>
+                <a href="">결제완료 내역</a>
+                <a href="">상담 진행중</a>
+                <a href="">구매확정 내역</a>
+                <a href="">취소요청 내역</a>
+                <a href="">취소완료 내역</a>
+              </div>
+            </li>
+            <li class="nav" id="my">
+              <a href="#my" class="btn">나의 상품</a>
+              <div class="sub">
+                <a href="">상품등록하기</a>
+                <a href="">판매중</a>
+                <a href="">판매중지</a>
+              </div>
+            </li>
+            <li class="nav" id="ad">
+              <a href="#ad" class="btn">광고관리/등록</a>
+              <div class="sub">
+                <a href="">광고 등록하기</a>
+                <a href="">광고 관리</a>
+              </div>
+            </li>
+            <li class="nav" id="total">
+              <a href="#total" class="btn">수익통계</a>
+            </li>
+            <li class="nav" id="review">
+              <a href="#review" class="btn">리뷰관리</a>
+              <div class="sub"></div>
+            </li>
+            <li class="nav" id="after">
+              <a href="#after" class="btn">정산관리</a>
+              <div class="sub"></div>
+            </li>
+            <li class="nav" id="tier">
+              <a href="#tier" class="btn">나의등급</a>
+              <div class="sub"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        style="
+          width: 50vw;
+          height: 5vh;
+          font-size: 20px;
+          margin-top: 3%;
+          margin-left: 5%;
+          border: 5px solid #57b1b0;
+          float: left;
+        "
+      >
+        판매내역
+        <p
+          style="
+            width: 50vw;
+            height: 20vh;
+            font-size: 20px;
+            margin-top: 5%;
+            margin-left: -0.25%;
+            border-color: black;
+            border: 1px solid;
+          "
+        ></p>
+        <p
+          style="
+            width: 50vw;
+            height: 0vh;
+            font-size: 20px;
+            margin-top: 3%;
+            margin-left: -0.25%;
+            border-color: black;
+            border: 1px solid;
+          "
+        ></p>
+        <p
+          style="
+            width: 50vw;
+            height: 50vh;
+            font-size: 20px;
+            margin-top: 3%;
+            margin-left: -0.25%;
+            border-color: black;
+            border: 1px solid;
+          "
+        ></p>
+      </div>
+    </div>
+
+    <div
+      style="
+        width: 100vw;
+        height: 8vh;
+        font-size: 30px;
+        text-align: center;
+        border-color: aliceblue;
+        border: 1px solid navy;
+        margin-top: 160vh;
+      "
+    >
+      푸터
+    </div>
+  </body>
+</html>

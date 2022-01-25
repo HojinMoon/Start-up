@@ -1,29 +1,30 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import { Route, Link } from "react-router-dom";
+import React from "react"
+import ReactDOM from "react-dom"
+import { BrowserRouter } from "react-router-dom"
+import { Route, Link } from "react-router-dom"
 
-import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.min.css";
+import reportWebVitals from "./reportWebVitals"
+import "bootstrap/dist/css/bootstrap.min.css"
 
-import Preview from "./screens/preview";
-import Main from "./screens/Main";
-import Analysis from "./screens/Analysis";
-import Consulting from "./screens/Consulting";
-import Consult_list from "./screens/Consult_list";
-import Consultant from "./screens/Consultant";
-import Home from "./screens/Home";
-import Service from "./screens/Service";
-import Login from "./screens/Login";
-import Contact from "./screens/Contact";
-import Account from "./screens/Account";
-import Select from "./screens/Select_card";
-import Form1 from "./screens/Form1";
-import Form2 from "./screens/Form2";
-import Form3 from "./screens/Form3";
-import Form4 from "./screens/Form4";
+import Preview from "./screens/preview"
+import Main from "./screens/Main"
+import Analysis from "./screens/Analysis"
+import Consulting from "./screens/Consulting"
+import Consult_list from "./screens/Consult_list"
+import Consultant from "./screens/Consultant"
+import Home from "./screens/Home"
+import Service from "./screens/Service"
+import Login from "./screens/Login"
+import Contact from "./screens/Contact"
+import Account from "./screens/Account"
+import Select from "./screens/Select_card"
+import Form1 from "./screens/Form1"
+import Form2 from "./screens/Form2"
+import Form3 from "./screens/Form3"
+import Form4 from "./screens/Form4"
+import MyAccount from "./screens/MyAccount"
 
-import "./index.css";
+import "./index.css"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -44,12 +45,13 @@ ReactDOM.render(
       <Route path="/form_step2" component={Form2} />
       <Route path="/form_step3" component={Form3} />
       <Route path="/form_step4" component={Form4} />
+      <Route path="/myaccount" component={MyAccount} />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
-);
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals()
